@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>个人博客</title>
+  <title>java多线程--学习 | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录过程">
-<meta property="og:type" content="website">
-<meta property="og:title" content="个人博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="多线程概念">
+<meta name="keywords" content="多线程、Thread、Runnable">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java多线程--学习">
+<meta property="og:url" content="http://yoursite.com/2019/09/25/java多线程-学习/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="记录过程">
+<meta property="og:description" content="多线程概念">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-25T13:41:00.007Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="个人博客">
-<meta name="twitter:description" content="记录过程">
+<meta name="twitter:title" content="java多线程--学习">
+<meta name="twitter:description" content="多线程概念">
   
     <link rel="alternative" href="/atom.xml" title="个人博客" type="application/atom+xml">
   
@@ -135,92 +137,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-linux常见命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-java多线程-学习" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/25/linux常见命令/">linux常见命令</a>
-    </h1>
-  
-
-        
-        <a href="/2019/09/25/linux常见命令/" class="archive-article-date">
-  	<time datetime="2019-09-25T13:07:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h1>
-        
-          <a class="article-more-a" href="/2019/09/25/linux常见命令/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">liunx</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/25/linux常见命令/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-java多线程-学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/25/java多线程-学习/">java多线程--学习</a>
+    <h1 class="article-title" itemprop="name">
+      java多线程--学习
     </h1>
   
 
@@ -233,12 +157,56 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="多线程概念"><a href="#多线程概念" class="headerlink" title="多线程概念"></a>多线程概念</h1>
-        
-          <a class="article-more-a" href="/2019/09/25/java多线程-学习/#more">more >></a>
-        
+        <h1 id="多线程概念"><a href="#多线程概念" class="headerlink" title="多线程概念"></a>多线程概念</h1> <a id="more"></a>
+<h2 id="进程与线程"><a href="#进程与线程" class="headerlink" title="进程与线程"></a>进程与线程</h2><p><strong>进程</strong>是指一个内存中运行的应用程序，每个进程都有自己独立的一块内存空间，即进程空间或（虚空间）。</p>
+<p><strong>线程</strong>是指进程中的一个执行流程，一个进程中可以运行多个线程。比如java.exe进程中可以运行很多线程。线程总是属于某个进程，线程没有自己的虚拟地址空间，与进程内的其他线程一起共享分配给该进程的所有资源。</p>
+<h2 id="Java中创建线程"><a href="#Java中创建线程" class="headerlink" title="Java中创建线程"></a>Java中创建线程</h2><p>  在java中创建线程的方式有三种：继承Thread类重写run方法、实现Runnable接口重写run方法和实现cllable接口重写call方法配合futureTask使用，其中最常见的是前两种</p>
+<h1 id="继承Thread类"><a href="#继承Thread类" class="headerlink" title="继承Thread类"></a>继承Thread类</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">public class MyThread extends Thread&#123;</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		MyThread myThread = new MyThread();</span><br><span class="line">		myThread.start();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	@Override</span><br><span class="line">	public void run() &#123;</span><br><span class="line">		int i = 0;</span><br><span class="line">		for(;i&lt;100;i++) &#123;</span><br><span class="line">			try &#123;</span><br><span class="line">				Thread.sleep(1000);</span><br><span class="line">			&#125; catch (Exception e) &#123;</span><br><span class="line">				e.printStackTrace();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="实现Runnable接口"><a href="#实现Runnable接口" class="headerlink" title="实现Runnable接口"></a>实现Runnable接口</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">public class MyRunnable implements Runnable &#123;</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		MyRunnable myRunnable = new MyRunnable();</span><br><span class="line">		Thread thread = new Thread(myRunnable);</span><br><span class="line">		thread.start();</span><br><span class="line">	&#125;</span><br><span class="line">	@Override</span><br><span class="line">	public void run() &#123;</span><br><span class="line">		int i = 0;</span><br><span class="line">		for (; i &lt; 100; i++) &#123;</span><br><span class="line">			try &#123;</span><br><span class="line">				Thread.sleep(1000);</span><br><span class="line">			&#125; catch (Exception e) &#123;</span><br><span class="line">				e.printStackTrace();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="实现callable接口"><a href="#实现callable接口" class="headerlink" title="实现callable接口"></a>实现callable接口</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">  public static void main(String[] args) throws Exception &#123;</span><br><span class="line">	System.out.println(&quot;12123&quot;);</span><br><span class="line">	FutureTask&lt;Integer&gt; futureTask = new FutureTask&lt;&gt;(new MyThread());</span><br><span class="line">	new Thread(futureTask).start();</span><br><span class="line">	// futureTask可以在指定时间内获取线程执行的返回值，超时则丢弃任务</span><br><span class="line">	//  因此futureTask可以用作异步任务处理</span><br><span class="line">	futureTask.get(1000, TimeUnit.SECONDS);</span><br><span class="line">&#125;</span><br><span class="line">@Override</span><br><span class="line">public Integer call() throws Exception &#123;</span><br><span class="line">	int i = 0;</span><br><span class="line">	for(;i&lt;100;i++) &#123;</span><br><span class="line">		try &#123;</span><br><span class="line">			Thread.sleep(1000);</span><br><span class="line">		&#125; catch (Exception e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	return i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="线程的各种状态"><a href="#线程的各种状态" class="headerlink" title="线程的各种状态"></a>线程的各种状态</h1><p>1、初始状态：线程被new出来时处于此种状态</p>
+<p>2、就绪状态：当一个线程的start方法被调用或正在运行的线程CPU时间片耗尽或处于阻塞状态的线程满足了运行条件时处于此种状态。就绪状态的线程处于CPU调度队列中等待获得CPU时间片执行。</p>
+<p>3、运行状态：处于就绪状态的线程获取到CPU时间片，正在执行。</p>
+<p>4、阻塞状态：当线程要执行的必要条件无法满足时处于此种状态，如等待其他线程释放锁、等待IO等。当这些条件得到满足后线程变为就绪状态。</p>
+<p>5、死亡：当线程run方法执行完或者遇到异常退出时线程死亡，线程的生命周期就此终止。</p>
+<h1 id="常用方法总结"><a href="#常用方法总结" class="headerlink" title="常用方法总结"></a>常用方法总结</h1><h2 id="wait、notify和notifyAll"><a href="#wait、notify和notifyAll" class="headerlink" title="wait、notify和notifyAll"></a>wait、notify和notifyAll</h2><p>wait方法:使调用此方法的线程立刻进图阻塞状态并放弃所持有的锁。</p>
+<p>notify与notifyAll：使当前线程放弃持有的某个对象上的锁并唤醒在这个对象锁上等待的其他线程，notify唤醒单个线程，notifyAll唤醒全部线程。调用notify方法后当前线程会在执行完剩余代码后放弃该对象的锁而不是像wait方法那样立即释放。</p>
+<p>下面用wait与notify实现的生产者消费问题</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line">package com.bjsxt.servlet;</span><br><span class="line">import java.util.Queue;</span><br><span class="line">import java.util.Random;</span><br><span class="line">import java.util.concurrent.LinkedBlockingQueue;</span><br><span class="line">public class Test1 &#123;</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		Queue&lt;Integer&gt; queue = new LinkedBlockingQueue&lt;&gt;();</span><br><span class="line">		new Producer(queue).start();</span><br><span class="line">		new Customer(queue).start();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">class Producer extends Thread &#123;</span><br><span class="line">	Queue&lt;Integer&gt; queue;</span><br><span class="line">	public Producer(Queue&lt;Integer&gt; queue) &#123;</span><br><span class="line">		this.queue = queue;</span><br><span class="line">	&#125;</span><br><span class="line">	@Override</span><br><span class="line">	public void run() &#123;</span><br><span class="line">		while (true) &#123;</span><br><span class="line">			synchronized (queue) &#123;</span><br><span class="line">				try&#123;</span><br><span class="line">                    Thread.sleep(500);</span><br><span class="line">                &#125; catch (Exception e) &#123;&#125;</span><br><span class="line">				if (queue.size() &gt;= 3) &#123;</span><br><span class="line">					try &#123;</span><br><span class="line">						System.out.println(&quot;队列已满，生产者阻塞&quot;);</span><br><span class="line">						queue.wait();</span><br><span class="line">					&#125; catch (InterruptedException e) &#123;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">				// 唤醒消费者</span><br><span class="line">				queue.notify();</span><br><span class="line">				int i = new Random().nextInt(100);</span><br><span class="line">				System.out.println(&quot;生产&quot; + i);</span><br><span class="line">				queue.add(i);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">class Customer extends Thread &#123;</span><br><span class="line">	Queue&lt;Integer&gt; queue;</span><br><span class="line"> </span><br><span class="line">	public Customer(Queue&lt;Integer&gt; queue) &#123;</span><br><span class="line">		this.queue = queue;</span><br><span class="line">	&#125;</span><br><span class="line">	@Override</span><br><span class="line">	public void run() &#123;</span><br><span class="line">		while (true) &#123;</span><br><span class="line">			synchronized (queue) &#123;</span><br><span class="line">				try&#123;</span><br><span class="line">                    Thread.sleep(500);</span><br><span class="line">                &#125; catch (Exception e) &#123;&#125;</span><br><span class="line">				if (queue.isEmpty()) &#123;</span><br><span class="line">					try &#123;</span><br><span class="line">						System.out.println(&quot;队列已空，消费者阻塞&quot;);</span><br><span class="line">						queue.wait();</span><br><span class="line">					&#125; catch (InterruptedException e) &#123;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">				// 唤醒生产者</span><br><span class="line">				queue.notify();</span><br><span class="line">				int i = queue.poll();</span><br><span class="line">				System.out.println(&quot;消费：&quot; + i);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">生产77</span><br><span class="line">生产97</span><br><span class="line">消费：77</span><br><span class="line">消费：97</span><br><span class="line">队列已空，消费者阻塞</span><br><span class="line">生产36</span><br><span class="line">生产46</span><br><span class="line">生产89</span><br><span class="line">消费：36</span><br><span class="line">消费：46</span><br><span class="line">消费：89</span><br><span class="line">队列已空，消费者阻塞</span><br></pre></td></tr></table></figure>
+
+<h2 id="jion-方法"><a href="#jion-方法" class="headerlink" title="jion()方法"></a>jion()方法</h2><p>join方法为Thread类所有方法，当在一个线程A中调用另一个线程B的join方法时，线程A会等待线程B执行完再进行执行。</p>
+<h2 id="sleep-方法"><a href="#sleep-方法" class="headerlink" title="sleep()方法"></a>sleep()方法</h2><p>sleep方法会使当前线程休眠指定时间，处于休眠的线程并不会放弃已经持有锁，放不放弃锁是sleep方法与wait方法的最大区别。</p>
+<h2 id="stop-方法"><a href="#stop-方法" class="headerlink" title="stop()方法"></a>stop()方法</h2><p>stop()：立即停止一个线程的运行并放弃他所持有的所有的锁。</p>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -258,16 +226,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/25/java多线程-学习/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/25/java多线程-学习/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2019/09/25/linux常见命令/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          linux常见命令
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/09/25/我的第一篇博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我的第一篇博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -287,138 +323,14 @@
 
 
 
-
   
-    <article id="post-我的第一篇博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/25/我的第一篇博客/">我的第一篇博客</a>
-    </h1>
   
 
-        
-        <a href="/2019/09/25/我的第一篇博客/" class="archive-article-date">
-  	<time datetime="2019-09-25T11:01:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="博客文章编写"><a href="#博客文章编写" class="headerlink" title="博客文章编写"></a>博客文章编写</h1>
-        
-          <a class="article-more-a" href="/2019/09/25/我的第一篇博客/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/25/我的第一篇博客/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/25/hello-world/">Hello World</a>
-    </h1>
   
 
-        
-        <a href="/2019/09/25/hello-world/" class="archive-article-date">
-  	<time datetime="2019-09-25T09:32:46.308Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-        
-          <a class="article-more-a" href="/2019/09/25/hello-world/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/25/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
+
   
 
 
@@ -441,8 +353,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
