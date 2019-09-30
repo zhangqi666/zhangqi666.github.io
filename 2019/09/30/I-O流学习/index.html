@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | 个人博客</title>
+  <title>I/O流学习 | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录过程">
-<meta property="og:type" content="website">
-<meta property="og:title" content="个人博客">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="I/O流学习">
+<meta name="keywords" content="I&#x2F;O流">
+<meta property="og:type" content="article">
+<meta property="og:title" content="I&#x2F;O流学习">
+<meta property="og:url" content="http://yoursite.com/2019/09/30/I-O流学习/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="记录过程">
+<meta property="og:description" content="I/O流学习">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-09-30T08:48:12.743Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="个人博客">
-<meta name="twitter:description" content="记录过程">
+<meta name="twitter:title" content="I&#x2F;O流学习">
+<meta name="twitter:description" content="I/O流学习">
   
     <link rel="alternative" href="/atom.xml" title="个人博客" type="application/atom+xml">
   
@@ -135,36 +137,86 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-I-O流学习" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/30/I-O流学习/" class="archive-article-date">
-  	<time datetime="2019-09-30T08:02:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-30</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/30/I-O流学习/">I/O流学习</a>
+    <h1 class="article-title" itemprop="name">
+      I/O流学习
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/09/30/I-O流学习/" class="archive-article-date">
+  	<time datetime="2019-09-30T08:02:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="I-O流学习"><a href="#I-O流学习" class="headerlink" title="I/O流学习"></a>I/O流学习</h1><a id="more"></a>    
+<p><a href="cnblogs.com/runningTurtle/p/7088125.html">文章参考</a></p>
+<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>  Java中对文件的操作是以流的方式进行的，流是Java内存中的一组有序数据序列。<br>  Java将数据从源读取到内存中，形成了流，然后可以将这些流写到另外的目的地。</p>
+<h2 id="流的分类"><a href="#流的分类" class="headerlink" title="流的分类"></a>流的分类</h2><p>1、流按照数据流向可以分为输入流和输出流</p>
+<p>2、根据数据类型不同分为字符流和字节流</p>
+<ul>
+<li>字节流以字节(8bit)为单位，字符流以字符为单位，根据码表映射字符，一次科能读多个字符。</li>
+<li>字节流能处理所有类型的数据(如数据、avi等)，而字符流只能处理字符类型的数据。 </li>
+</ul>
+<h2 id="Java-IO流对象"><a href="#Java-IO流对象" class="headerlink" title="Java IO流对象"></a>Java IO流对象</h2><h3 id="1、输入字节流"><a href="#1、输入字节流" class="headerlink" title="1、输入字节流"></a>1、输入字节流</h3><pre><code>1、InputStream 是所有的输入字节流的父类，它是一个抽象类。
+2、ByteArrayInputStream、StringBufferInputStream、FileInputStream 是三种基本的介质流，它们分别从Byte 数组、StringBuffer、和本地文件中读取数据。PipedInputStream 是从与其它线程共用的管道中读取数据，与Piped 相关的知识后续单独介绍。
+3、ObjectInputStream 和所有FilterInputStream 的子类都是装饰流（装饰器模式的主角）。</code></pre><h3 id="2、输出字节流OutputStream"><a href="#2、输出字节流OutputStream" class="headerlink" title="2、输出字节流OutputStream"></a>2、输出字节流OutputStream</h3><pre><code>1、OutputStream 是所有的输出字节流的父类，它是一个抽象类。
+2、ByteArrayOutputStream、FileOutputStream 是两种基本的介质流，它们分别向Byte 数组、和本地文件中写入数据。PipedOutputStream 是向与其它线程共用的管道中写入数据，
+3、ObjectOutputStream 和所有FilterOutputStream 的子类都是装饰流。</code></pre><h3 id="3、字符输入流Reader"><a href="#3、字符输入流Reader" class="headerlink" title="3、字符输入流Reader"></a>3、字符输入流Reader</h3><pre><code>1、Reader 是所有的输入字符流的父类，它是一个抽象类。
+2、CharReader、StringReader 是两种基本的介质流，它们分别将Char 数组、String中读取数据。PipedReader 是从与其它线程共用的管道中读取数据。
+3、BufferedReader 很明显就是一个装饰器，它和其子类负责装饰其它Reader 对象。
+4、FilterReader 是所有自定义具体装饰流的父类，其子类PushbackReader 对Reader 对象进行装饰，会增加一个行号。
+5、InputStreamReader 是一个连接字节流和字符流的桥梁，它将字节流转变为字符流。FileReader 可以说是一个达到此功能、常用的工具类，在其源代码中明显使用了将FileInputStream 转变为Reader 的方法。我们可以从这个类中得到一定的技巧。Reader 中各个类的用途和使用方法基本和InputStream 中的类使用一致。后面会有Reader 与InputStream 的对应关系。</code></pre><h3 id="4、字符输出流Writer"><a href="#4、字符输出流Writer" class="headerlink" title="4、字符输出流Writer"></a>4、字符输出流Writer</h3><pre><code>1、Writer 是所有的输出字符流的父类，它是一个抽象类。
+2、CharArrayWriter、StringWriter 是两种基本的介质流，它们分别向Char 数组、String 中写入数据。PipedWriter 是向与其它线程共用的管道中写入数据，
+3、BufferedWriter 是一个装饰器为Writer 提供缓冲功能。
+4、PrintWriter 和PrintStream 极其类似，功能和使用也非常相似。
+5、OutputStreamWriter 是OutputStream 到Writer 转换的桥梁，它的子类FileWriter 其实就是一个实现此功能的具体类（具体可以研究一SourceCode）。功能和使用和OutputStream 极其类似，后面会有它们的对应图。</code></pre><h2 id="常用例子"><a href="#常用例子" class="headerlink" title="常用例子"></a>常用例子</h2><p>使用FileInputStream类读取文件内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">import java.io.FileInputStream;</span><br><span class="line">import java.io.FileNotFoundException;</span><br><span class="line">import java.io.IOException;</span><br><span class="line"></span><br><span class="line">public class firstIO &#123;</span><br><span class="line">	public static void main(String [] args) throws IOException&#123;</span><br><span class="line">		int i=0;</span><br><span class="line">		FileInputStream in=null;</span><br><span class="line">		try &#123;</span><br><span class="line">			in=new FileInputStream(&quot;C:\\Users\\zhangqi\\Desktop\\test.txt&quot;);//从文件外读数据</span><br><span class="line">		&#125; catch (FileNotFoundException e) &#123;</span><br><span class="line">			// TODO: handle exception</span><br><span class="line">			System.out.println(&quot;找不到文件&quot;);</span><br><span class="line">			System.exit(-1);</span><br><span class="line">		&#125;</span><br><span class="line">		try &#123;</span><br><span class="line">			int num=0;//用于字节个数的计数</span><br><span class="line">			while((i=in.read())!=-1)&#123;</span><br><span class="line">				System.out.println((char)i);//将得到的ASCII码值转换成字符型</span><br><span class="line">				num++;</span><br><span class="line">			&#125;</span><br><span class="line">			in.close();</span><br><span class="line">			System.out.println(&quot;传输字节个数：&quot;+num);</span><br><span class="line">		&#125; catch (Exception e) &#123;</span><br><span class="line">			// TODO: handle exception</span><br><span class="line">			System.out.println(&quot;读取文件失败&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>使用FileOutputStream写入文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">import java.io.FileInputStream;</span><br><span class="line">import java.io.FileOutputStream;</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">public class outIO &#123;</span><br><span class="line">	public static void main(String []args)&#123;</span><br><span class="line">		int i=0;</span><br><span class="line">		FileInputStream in=null;</span><br><span class="line">		FileOutputStream out=null;</span><br><span class="line">		try &#123;</span><br><span class="line">			//实例化FileInputStream，FileOutputStream对象</span><br><span class="line">			in=new FileInputStream(&quot;C:\\Users\\zhangqi\\Desktop\\text1.txt&quot;);//源文件</span><br><span class="line">			out=new FileOutputStream(&quot;C:\\Users\\zhangqi\\Desktop\\text2.txt&quot;);//目标文件</span><br><span class="line">			while((i=in.read())!=-1)&#123;</span><br><span class="line">				out.write(i);</span><br><span class="line">				System.out.println((char)i);</span><br><span class="line">			&#125;</span><br><span class="line">			in.close();</span><br><span class="line">			out.close();</span><br><span class="line">			System.out.println(&quot;文件已复制&quot;);</span><br><span class="line">		&#125; catch (Exception e) &#123;</span><br><span class="line">			// TODO: handle exception</span><br><span class="line">			System.out.println(&quot;文件复制失败&quot;);</span><br><span class="line">			System.exit(-1);</span><br><span class="line">		&#125; </span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>使用FileRead、FileWriter复制文件 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">import java.io.FileReader;</span><br><span class="line">import java.io.FileWriter;</span><br><span class="line"> </span><br><span class="line">public class TestFieldWriter1 &#123;</span><br><span class="line">public static void main(String []args)&#123;</span><br><span class="line">	FileReader fr=null;</span><br><span class="line">	FileWriter fw=null;</span><br><span class="line">	try &#123;</span><br><span class="line">		fr=new FileReader(&quot;C:\\Users\\15080\\Desktop\\eeee.txt&quot;);//要读取的文件</span><br><span class="line">		fw=new FileWriter(&quot;C:\\Users\\15080\\Desktop\\ffff.txt&quot;);//要复制的目的文件</span><br><span class="line">		int i=0;</span><br><span class="line">		while((i=fr.read())!=-1)&#123;</span><br><span class="line">			fw.write(i);</span><br><span class="line">			System.out.println((char)i);//将得到的ASCII码值转换成字符型</span><br><span class="line">		&#125;</span><br><span class="line">		fr.close();</span><br><span class="line">		fw.close();</span><br><span class="line">	&#125; catch (Exception e) &#123;</span><br><span class="line">		// TODO: handle exception</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -176,160 +228,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/30/I-O流学习/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/25/linux常见命令/" class="archive-article-date">
-  	<time datetime="2019-09-25T13:07:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/09/25/linux常见命令/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">linux常见命令</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/25/linux常见命令/">linux常见命令</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">liunx</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/25/java多线程-学习/" class="archive-article-date">
-  	<time datetime="2019-09-25T12:40:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/25/java多线程-学习/">java多线程--学习</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">多线程</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/25/我的第一篇博客/" class="archive-article-date">
-  	<time datetime="2019-09-25T11:01:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/25/我的第一篇博客/">我的第一篇博客</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">markdown基本语法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/09/25/hello-world/" class="archive-article-date">
-  	<time datetime="2019-09-25T09:32:46.308Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/25/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -352,8 +350,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
