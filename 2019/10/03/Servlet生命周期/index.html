@@ -6,22 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>我的第一篇博客 | 个人博客</title>
+  <title>Servlet生命周期 | 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="博客文章编写">
-<meta name="keywords" content="markdown基本语法">
+  <meta name="description" content="Servlet生命周期">
+<meta name="keywords" content="Servlet">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客">
-<meta property="og:url" content="http://yoursite.com/2019/09/25/我的第一篇博客/index.html">
+<meta property="og:title" content="Servlet生命周期">
+<meta property="og:url" content="http://yoursite.com/2019/10/03/Servlet生命周期/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="博客文章编写">
+<meta property="og:description" content="Servlet生命周期">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://img4.imgtn.bdimg.com/it/u=417950965,3249934671&fm=26&gp=0.jpg">
-<meta property="og:updated_time" content="2019-09-26T03:40:54.176Z">
+<meta property="og:updated_time" content="2019-10-05T09:06:44.980Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的第一篇博客">
-<meta name="twitter:description" content="博客文章编写">
-<meta name="twitter:image" content="http://img4.imgtn.bdimg.com/it/u=417950965,3249934671&fm=26&gp=0.jpg">
+<meta name="twitter:title" content="Servlet生命周期">
+<meta name="twitter:description" content="Servlet生命周期">
   
     <link rel="alternative" href="/atom.xml" title="个人博客" type="application/atom+xml">
   
@@ -139,63 +137,53 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇博客" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Servlet生命周期" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      我的第一篇博客
+      Servlet生命周期
     </h1>
   
 
         
-        <a href="/2019/09/25/我的第一篇博客/" class="archive-article-date">
-  	<time datetime="2019-09-25T11:01:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
+        <a href="/2019/10/03/Servlet生命周期/" class="archive-article-date">
+  	<time datetime="2019-10-03T08:24:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-03</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="博客文章编写"><a href="#博客文章编写" class="headerlink" title="博客文章编写"></a>博客文章编写</h1> <a id="more"></a>
-<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>是用标题时需要#号</p>
-<h2 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h2><p>这是一个段落内容</p>
-<p>这是第二个段落</p>
-<h2 id="区块引用"><a href="#区块引用" class="headerlink" title="区块引用"></a>区块引用</h2><blockquote>
-<p>这是一段引用段落，将会被高亮显示</p>
-</blockquote>
-<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><p> <a href="https://www.baidu.com/?tn=48021271_10_hao_pg" target="_blank" rel="noopener">百度</a></p>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p> <img src="http://img4.imgtn.bdimg.com/it/u=417950965,3249934671&fm=26&gp=0.jpg" alt="风景"></p>
-<h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><ul>
-<li>列表内容</li>
-</ul>
+        <h1 id="Servlet生命周期"><a href="#Servlet生命周期" class="headerlink" title="Servlet生命周期"></a>Servlet生命周期</h1><a id="more"></a>
+
+<p><a href="https://www.runoob.com/servlet/servlet-life-cycle.html" target="_blank" rel="noopener">文章参考</a></p>
+<h2 id="Servlet生命周期-1"><a href="#Servlet生命周期-1" class="headerlink" title="Servlet生命周期"></a>Servlet生命周期</h2><p>Servlet的生命周期大致分为以下过程：</p>
 <ul>
-<li>列表内容</li>
+<li>Servlet通过调用init()方法进行初始化。</li>
+<li>Servlet调用service()方法来处理客户端的请求。</li>
+<li>Servlet通过调用destroy()方法结束。</li>
+<li>最后，Servlet是由JVM的垃圾回收器进行垃圾回收的。</li>
 </ul>
-<ul>
-<li>列表内容</li>
-</ul>
-<h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><ol>
-<li>列表内容</li>
-<li>列表内容</li>
-<li>列表内容</li>
-</ol>
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><hr>
-<hr>
-<hr>
-<hr>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><pre><code>姓名|技能|排行
- ---|:--:|---:
-刘备|1|大哥
-关于|2|二哥
-张飞|3|三弟</code></pre><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p><code>create database hero;</code><br>(<code>)
-    function fun(){
-         echo &quot;这是一句非常牛逼的代码&quot;;
-    }
-    fun();
-(</code>)</p>
+<h3 id="init-方法"><a href="#init-方法" class="headerlink" title="init()方法"></a>init()方法</h3><p>init()方法简单的创建或加载一些数据，这些数据将被用于Servlet的整个生命周期。<br>init方法的定义如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public void init() throws ServletException&#123;</span><br><span class="line">//初始化代码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="service-方法"><a href="#service-方法" class="headerlink" title="service()方法"></a>service()方法</h3><p>service()方法是执行实际任务的主要方法。Servlet容器调用service()方法来处理来自客户端(浏览器)的请求，并把格式化的响应写回给客户端。</p>
+<p>每次服务器接收到一个Servlet请求时，服务器会产生一个新的线程并调用服务。service()方法检查Http请求类型(GET、POST、PUT、DELETE等)，并在适当的时候调用doGet、doPut、doDelete等方法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">public void service(SerletRequset requset,ServletResponse response)throws ServletException,IOException&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="doGet-方法"><a href="#doGet-方法" class="headerlink" title="doGet()方法"></a>doGet()方法</h3><p>GET请求来自一个URL的正常请求，或者来自一个未指定的METHOD的HTML表单，它由doGet()方法处理。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public void doGet(HttpServletRequest requset,HttpServletResponse response) throws ServletException,IOException&#123;</span><br><span class="line">&#125;</span><br><span class="line">//Servlet方法</span><br></pre></td></tr></table></figure>
+
+<h3 id="doPost-方法"><a href="#doPost-方法" class="headerlink" title="doPost()方法"></a>doPost()方法</h3><p>POST请求来自于一个特别制定了METHOD为POST的HTML表单，它由doPOST()方法处理。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public void doPost(HttpServletRequest requset,HttpServletResponse response) throws ServletException,IOException&#123;</span><br><span class="line">//Servlet 代码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="destroy-方法"><a href="#destroy-方法" class="headerlink" title="destroy()方法"></a>destroy()方法</h3><p>destroy()方法只会调用一次，在Servlet生命周期结束时被调用。destroy()方法可以让Servlet关闭数据连接、停止后台线程、把Cookie列表或点击计数器写入磁盘并执行其他类似的清理活动。</p>
+<p>在调用destroy()方法之后，servlet对象被标记为垃圾回收。destroy方法定义如下所示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public void destroy()&#123;</span><br><span class="line">	//终止代码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
       
 
@@ -230,7 +218,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">markdown基本语法</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Servlet</a>
         		</li>
       		
 		</ul>
@@ -286,7 +274,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/25/我的第一篇博客/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/03/Servlet生命周期/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -300,18 +288,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/25/java多线程-学习/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          java多线程--学习
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/09/25/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2019/09/30/I-O流学习/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">I/O流学习</div>
       <i class="icon-circle-right"></i>
     </a>
   
